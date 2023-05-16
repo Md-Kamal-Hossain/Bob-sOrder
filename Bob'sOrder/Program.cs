@@ -6,7 +6,8 @@ class MainClass
     public static void Main(string[] args)
     {
         
-        while (Console.ReadKey(true).Key != ConsoleKey.X)
+        
+        do
         {
             //initializing variable for discount
             decimal discount = 0;
@@ -38,6 +39,7 @@ class MainClass
             }
 
         }
+        while (Console.ReadKey().Key != ConsoleKey.X);
      
     }
 }
